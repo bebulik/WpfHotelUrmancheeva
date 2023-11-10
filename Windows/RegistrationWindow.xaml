@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfHotel1.Windows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfHotel1.Windows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Background="AliceBlue" Height="650" Width="500">
+    <Grid>
+        <StackPanel>
+            <Label Content="Регистрация" 
+                    HorizontalAlignment="Center" 
+                    FontSize="40"
+                    FontStyle="Italic"
+                    Foreground="Blue"
+                    Grid.Row="1"
+                    Margin="1, 1, 1, 1"></Label>
+            <TextBox x:Name="tb1" Height="30" Width="300" 
+                     HorizontalAlignment="Center" Margin="1, 20, 1, 1"
+                     Text="Логин" 
+                     LostFocus="tb1_LostFocus" 
+                     GotFocus="tb1_GotFocus"></TextBox>
+            <TextBox x:Name="tb2" Height="30" Width="300" 
+                            Margin="1, 10, 1, 1"
+                            Text="Пароль" 
+                     LostFocus="tb2_LostFocus" 
+                     GotFocus="tb2_GotFocus"/>
+            <TextBox x:Name="tb3" Height="30" Width="300" 
+                Margin="1, 10, 1, 1" Text="Имя" 
+                     LostFocus="tb3_LostFocus" 
+                     GotFocus="tb3_GotFocus"/>
+            <TextBox x:Name="tb4" Height="30" Width="300" 
+                        Margin="1, 10, 1, 1" Text="Фамилия" 
+                     LostFocus="tb4_LostFocus" 
+                     GotFocus="tb4_GotFocus"/>
+            <TextBox x:Name="tb5" Height="30" Width="300" 
+                        Margin="1, 10, 1, 1" Text="Отчество"
+                     LostFocus="tb5_LostFocus" 
+                     GotFocus="tb5_GotFocus"/>
+            <ComboBox x:Name="cb1" Height="30" Width="300" 
+            Margin="1, 10, 1, 1"/>
+            <TextBox x:Name="tb6" Height="30" Width="300" 
+            Margin="1, 10, 1, 1" Text="Номер телефона"  GotFocus="tb6_GotFocus"/>
+            <TextBox x:Name="tb7" Height="30" Width="300" 
+            Margin="1, 10, 1, 1" Text="Электронная почта" 
+                     LostFocus="tb7_LostFocus" 
+                     GotFocus="tb7_GotFocus"/>
+            <TextBox x:Name="tb8" Height="30" Width="300" 
+            Margin="1, 10, 1, 1" Text="Серия паспорта" 
+                     LostFocus="tb8_LostFocus" 
+                     GotFocus="tb8_GotFocus"/>
+            <TextBox x:Name="tb9" Height="30" Width="300" 
+            Margin="1, 10, 1, 1" Text="Номер паспорта" 
+                     LostFocus="tb9_LostFocus" 
+                     GotFocus="tb9_GotFocus"/>
+            <Button x:Name="btn1"
+                        Height="30" Width="150"
+                        Background="Blue"
+                        Content="Регистрация"
+                        Foreground="AliceBlue"
+                        FontStyle="Italic" Click="btn1_Click" Margin="1, 30, 1, 1"/>
+            <Button x:Name="btn2"
+                    Height="30" Width="150"
+                    Background="Blue"
+                    Content="Авторизация"
+                    Foreground="AliceBlue"
+                    FontStyle="Italic" Click="btn2_Click" Margin="1, 10, 1, 1"/>
+        </StackPanel>
+    </Grid>
+</Window>
